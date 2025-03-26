@@ -1,0 +1,85 @@
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    width: 100%;
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+}
+
+/*.footer-container {
+    background: linear-gradient(180deg,#0f0f0f); Adjust colors if needed 
+    padding: 20px;
+    text-align: center;
+    color: rgb(246, 235, 235);
+    border-radius: 15px; /* Optional - for rounded edges 
+    width: 80%;
+    margin: auto; 
+} */
+
+.footer-container {
+    text-align: center;
+    padding: 0px;
+    background: linear-gradient(135deg,  #0B0F1E 0%, #2D1B59 50%, #8A2BE2);
+    color: white;
+    margin-top: 100px;
+}
+
+/*.footer-note {
+    margin-top: 10px;
+    font-size: 14px;
+}*/
+
+
+.social-links a {
+    color: #8a6a91; /* Change to your desired color */
+    font-size: 24px; /* Adjust the icon size */
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.social-links a:hover {
+    color: #430452; /* Different color on hover */
+}
+.social-card i {
+    font-size: 24px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-card:hover i {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+.email-section {
+    margin-top: 15px;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.email-box span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email-box button {
+    background: #f39c12;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-note {
+    margin-top: 15px;
+    font-size: 14px;
+}

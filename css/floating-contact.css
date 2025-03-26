@@ -1,0 +1,68 @@
+/* Floating Contact Button */
+#contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffaf7b;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-button:hover {
+    background: #d76d77;
+    transform: scale(1.1);
+}
+
+/* Contact Modal */
+#contact-modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    width: 40%;
+}
+
+#contact-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffaf7b;
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-note {
+    margin-top: 10px;
+    font-size: 14px;
+}

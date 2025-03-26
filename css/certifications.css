@@ -1,0 +1,125 @@
+/* Global Styles for Certifications Page */
+.certifications {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+    /* Add animation */
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeScaleUp 0.8s ease-in-out forwards;
+}
+
+.cert-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+    /* Add animation */
+    animation: floatingGlow 4s ease-in-out infinite alternate;
+}
+
+/* Hover effect (keeps existing behavior) */
+.cert-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Certificate Images */
+.cert-card img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Certification Title */
+.cert-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Certification Details */
+.cert-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Verification Button */
+.verify-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.verify-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cert-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================== */
+/* 🚀 KEYFRAMES SECTION */
+/* ===================== */
+
+/* Page Entry Animation */
+@keyframes fadeScaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Floating Effect */
+@keyframes floatingEffect {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes floatingGlow {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    }
+}

@@ -1,0 +1,105 @@
+/* Education Section */
+.education-section {
+    text-align: center;
+    padding: 230px 20px 60px; /* Increased padding to fix navbar overlap */
+    background: linear-gradient(135deg, #1A083D, #4B0082);
+    min-height: 100vh;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px; /* More spacing */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Increased gap between cards */
+}
+
+/* Education Card */
+.edu-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    width: 60%; /* Make cards wider */
+    text-align: left;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px rgba(167, 113, 247, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.edu-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px rgba(167, 113, 247, 0.6);
+}
+
+/* Institution Logo */
+.edu-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 0px 10px rgba(167, 113, 247, 0.5));
+}
+
+/* Institution Name */
+h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Degree Details */
+.edu-institute {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Year and GPA */
+.edu-year {
+    display: block;
+    font-size: 16px;
+    color: #A371F7;
+    margin: 10px 0;
+}
+
+/* Description */
+.edu-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+/* Notable Projects */
+.edu-projects {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #A371F7;
+    font-weight: bold;
+}
+
+/* Skills */
+.edu-skills {
+    font-size: 15px;
+    color: #FAD02E;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Animation Effects */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}

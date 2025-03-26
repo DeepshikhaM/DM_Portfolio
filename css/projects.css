@@ -1,0 +1,70 @@
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 120px 10%;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(167, 113, 247, 0.6);
+}
+
+/* Project Image */
+.project-card img {
+    width: 45%;
+    border-radius: 50%; /* Change from 10px to 50% to make it circular */
+    object-fit: cover; /* Ensures the image fills the circular frame */
+}
+
+/* Read More Button */
+.read-more-btn {
+    background: #7E57C2;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background: #A371F7;
+    transform: scale(1.05);
+}
+
+/* GitHub Link */
+.project-link {
+    display: block;
+    margin-top: 10px;
+    color: #A371F7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Hidden Class for Read More */
+.hidden {
+    display: none;
+}
