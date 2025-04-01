@@ -8,3 +8,10 @@ document.querySelectorAll(".btn").forEach(button => {
         button.style.transform = "scale(1)";
     });
 });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});

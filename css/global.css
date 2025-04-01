@@ -201,62 +201,53 @@ nav ul li a.active {
 }
 
 
-/* 📱 Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      padding: 10px 20px;
-      height: auto;
-      width: 100%;
-      left: 0;
-      top: 0;
-      border-radius: 0;
-      position: fixed;
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1100;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #E0E0E0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
     }
   
     nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: rgba(11, 15, 30, 0.95);
       flex-direction: column;
-      gap: 10px;
-      padding: 10px 0;
+      align-items: center;
+      display: none;
+      padding: 20px 0;
+      border-radius: 0 0 12px 12px;
     }
   
-    .hero {
-      padding-top: 100px;
-      height: auto;
-    }
-  
-    .hero-title {
-      font-size: 2rem;
-      padding: 0 1rem;
-    }
-  
-    .tagline {
-      font-size: 1rem;
-      padding: 0 1rem;
-    }
-  
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      margin-top: 1rem;
-    }
-  
-    .btn, .resume-btn {
-      width: 80%;
-      font-size: 0.9rem;
-      padding: 10px 20px;
-    }
-  
-    .buttons {
+    nav ul.active {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 2rem;
     }
   
-    footer {
-      font-size: 0.85rem;
-      padding: 1rem;
+    nav ul li a {
+      padding: 16px;
+      font-size: 1.1rem;
+    }
+  
+    header {
+      padding: 14px 30px; /* Slightly reduce padding for mobile */
     }
   }
   
